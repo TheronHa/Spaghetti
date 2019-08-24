@@ -66,13 +66,17 @@ def move():
     
 
     if turn == 1:
-        return move_response('right')
+        direction = 'right'
+        return move_response(direction)
     else if turn == 2:
-        return move_response('right')
+        direction = 'right'
+        return move_response(direction)
     else if turn == 2:
-        return move_response('down')
+        direction = 'right'
+        return move_response(direction)
     else:
-        return move_response('left')
+        direction = 'right'
+        return move_response(direction)
 
 
 @bottle.post('/end')
