@@ -60,7 +60,7 @@ def move():
     
     if turn is None:
         turn = 1
-    else if turn == 4:
+    elif turn == 4:
         turn = 1
     else:
         turn = turn + 1
@@ -68,10 +68,10 @@ def move():
     if turn == 1:
         direction = 'right'
         return move_response(direction)
-    else if turn == 2:
+    elif turn == 2:
         direction = 'right'
         return move_response(direction)
-    else if turn == 2:
+    elif turn == 2:
         direction = 'right'
         return move_response(direction)
     else:
