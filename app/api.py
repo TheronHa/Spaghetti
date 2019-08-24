@@ -30,7 +30,7 @@ def move_response(move):
             "Content-Type": "application/json"
         },
         body=json.dumps({
-            "move": 'right'
+            "move": move
         })
     )
 

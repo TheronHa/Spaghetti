@@ -3,8 +3,6 @@ import os
 import random
 import bottle
 
-
-
 from api import ping_response, start_response, move_response, end_response
 
 @bottle.route('/')
@@ -19,7 +17,6 @@ def static(path):
     """
     Given a path, return the static file located relative
     to the static folder.
-
     This can be used to return the snake head URL in an API response.
     """
     return bottle.static_file(path, root='static/')
@@ -57,27 +54,12 @@ def move():
             snake AI must choose a direction to move in.
     """
     print(json.dumps(data))
-    
-    #if turn is None:
-    #    turn = 1
-    #elif turn == 4:
-    #    turn = 1
-    #else:
-    #    turn = turn + 1
 
-    #if turn == 1:
-    #    direction = 'right'
-    #    return move_response(direction)
-    #elif turn == 2:
-    #    direction = 'right'
-    #    return move_response(direction)
-    #elif turn == 2:
-#   direction = 'right'
- #       return move_response(direction)
-  #  else:
-   #     direction = 'right'
-    #    return move_response(direction)
-    return move_response('right')
+    directions = ['up', 'down', 'left', 'right']
+    direction = random.choice(directions)
+
+    return move_response(direction)
+
 
 @bottle.post('/end')
 def end():
