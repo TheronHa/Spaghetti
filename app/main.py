@@ -58,26 +58,26 @@ def move():
     """
     print(json.dumps(data))
     
-    if turn is None:
-        turn = 1
-    elif turn == 4:
-        turn = 1
-    else:
-        turn = turn + 1
+    #if turn is None:
+    #    turn = 1
+    #elif turn == 4:
+    #    turn = 1
+    #else:
+    #    turn = turn + 1
 
-    if turn == 1:
-        direction = 'right'
-        return move_response(direction)
-    elif turn == 2:
-        direction = 'right'
-        return move_response(direction)
-    elif turn == 2:
-        direction = 'right'
-        return move_response(direction)
-    else:
-        direction = 'right'
-        return move_response(direction)
-
+    #if turn == 1:
+    #    direction = 'right'
+    #    return move_response(direction)
+    #elif turn == 2:
+    #    direction = 'right'
+    #    return move_response(direction)
+    #elif turn == 2:
+#   direction = 'right'
+ #       return move_response(direction)
+  #  else:
+   #     direction = 'right'
+    #    return move_response(direction)
+        return move_response('right')
 
 @bottle.post('/end')
 def end():
