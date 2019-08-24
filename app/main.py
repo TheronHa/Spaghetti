@@ -55,12 +55,22 @@ def move():
             snake AI must choose a direction to move in.
     """
     print(json.dumps(data))
+    
+    if turn = null :
+        turn = 1
+    else if turn = 4 :
+        turn = 1
+    else:
+        turn = turn + 1
 
-    directions = ['up', 'down', 'left', 'right']
-    direction = random.choice(directions)
-
-    return move_response(direction)
-
+    if turn = 1
+        return move_response('up')
+    else if turn = 2
+        return move_response('right')
+    else if turn = 2
+        return move_response('down')
+    else 
+        return move_response('left')
 
 @bottle.post('/end')
 def end():
