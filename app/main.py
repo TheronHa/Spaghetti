@@ -3,12 +3,7 @@ import os
 import random
 import bottle
 
-if turn is None:
-        turn = 1
-    else if turn == 4:
-        turn = 1
-    else:
-        turn = turn + 1
+
 
 from api import ping_response, start_response, move_response, end_response
 
@@ -63,7 +58,12 @@ def move():
     """
     print(json.dumps(data))
     
-    
+    if turn is None:
+        turn = 1
+    else if turn == 4:
+        turn = 1
+    else:
+        turn = turn + 1
 
     if turn == 1:
         direction = 'right'
