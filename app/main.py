@@ -56,7 +56,7 @@ def move():
     """
     print(json.dumps(data))
     
-    if turn == null :
+    if turn is None :
         turn = 1
     else if turn == 4 :
         turn = 1
