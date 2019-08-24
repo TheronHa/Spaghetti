@@ -77,7 +77,7 @@ def move():
   #  else:
    #     direction = 'right'
     #    return move_response(direction)
-    return move_response('right')
+    return move_response("'right'")
 
 @bottle.post('/end')
 def end():
