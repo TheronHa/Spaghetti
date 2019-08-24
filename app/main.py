@@ -64,13 +64,14 @@ def move():
         turn = turn + 1
 
     if turn == 1
-        return move_response('up')
+        return move_response('right')
     else if turn == 2
         return move_response('right')
     else if turn == 2
         return move_response('down')
     else 
         return move_response('left')
+
 
 @bottle.post('/end')
 def end():
