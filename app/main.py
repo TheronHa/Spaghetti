@@ -56,20 +56,20 @@ def move():
     """
     print(json.dumps(data))
     
-    if turn is None :
+    if turn is None:
         turn = 1
-    else if turn == 4 :
+    else if turn == 4:
         turn = 1
     else:
         turn = turn + 1
 
-    if turn == 1
+    if turn == 1:
+        return move_response('up')
+    else if turn == 2:
         return move_response('right')
-    else if turn == 2
-        return move_response('right')
-    else if turn == 2
+    else if turn == 2:
         return move_response('down')
-    else 
+    else:
         return move_response('left')
 
 
